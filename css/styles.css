@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans");
+a {
+  text-decoration: none;
+  color: #A01B2E;
+}
+
+a:visited {
+  color: #A01B2E;
+}
+
+body {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.description {
+  margin-bottom: 15px;
+}
+
+footer {
+  background: #A01B2E;
+}
+
+footer p {
+  color: black;
+  padding: 5px 0;
+}
+
+h1 {
+  text-align: center;
+  background: url("images/header.png");
+  padding: 40px 0;
+  color: white;
+  font-size: 30px;
+}
+
+h2, h3 {
+  color: #A01B2E;
+  font-size: 20px;
+}
+
+h1, h2, h3 {
+  font-family: "Abril Fatface";
+}
+
+hours {
+  text-align: center;
+}
+
+.hours, .location {
+  border-top: solid 1px black;
+}
+
+.intro {
+  color: #106286;
+  font-size: 30px;
+  text-align: center;
+  background-color: #D8D8D8;
+  padding: 5px 0;
+}
+
+li, p, table {
+  font-family: "Open Sans";
+  list-style: none;
+}
+
+.map {
+  width: 100%;
+}
+
+.more {
+  background-color: #D8D8D8;
+  font-size: 10px;
+  text-align: center;
+  display: block;
+  margin: 0 auto 20px;
+  width: 50px;
+}
+
+p {
+  font-size: 10px;
+  width: 220px;
+  margin: 0 auto;
+}
+
+p, table {
+  color: #979797;
+}
+
+.place {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.product {
+  font-family: "Open Sans";
+  font-size: 10px;
+  color: #979797;
+  width: 220px;
+  margin: 0 auto;
+}
+
+.sub-head {
+  font-family: "Open Sans";
+  text-align: center;
+  color: #A01B2E;
+  font-size: 20px;
+}
+
+table {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tablet {
+  display: none;
+}
+
+ul {
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .bakery {
+    width: 450px;
+  }
+
+  body {
+    width: 768px;
+  }
+
+  .flip {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  .goods {
+    width: 300px;
+  }
+
+  .hours, .location {
+    border-top: none;
+  }
+
+  .intro {
+    font-size: 45px;
+  }
+
+  .map {
+    width: 242px;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  nav ul {
+    background-color: #D8D8D8;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav li {
+    font-size: 25px;
+  }
+
+  p {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .product {
+    width: 300px;
+  }
+
+  .side {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 100px;
+  }
+
+  .sub-head {
+    font-size: 30px;
+  }
+
+  .tiles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
+  }
+
+  .tablet {
+    display: block;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

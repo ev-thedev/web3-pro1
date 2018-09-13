@@ -3,10 +3,9 @@
 a {
     text-decoration: none;
     color: #A01B2E;
-}
-
-a:visited {
-    color: #A01B2E;
+    &:visited {
+        color: #A01B2E;
+    }
 }
 
 body{
@@ -20,11 +19,10 @@ body{
 
 footer {
     background: #A01B2E;
-}
-
-footer p {
-    color: black;
-    padding: 5px 0;
+    p {
+        color: black;
+        padding: 5px 0;
+    }
 }
 
 h1 {
@@ -44,11 +42,12 @@ h1, h2, h3 {
     font-family: "Abril Fatface";
 }
 
-hours {
+.hours {
+    @extend .location
     text-align: center;
 }
 
-.hours, .location {
+.location {
     border-top: solid 1px black;
 }
 
@@ -79,12 +78,13 @@ li, p, table  {
 }
 
 p {
+    @extend table
     font-size: 10px;
     width: 220px;
     margin: 0 auto;
 }
 
-p, table {
+table {
     color: #979797;
 }
 
@@ -129,55 +129,56 @@ ul {
     .bakery {
         width: 450px;
     }
-    
+
     body {
         width: 768px;
     }
-    
+
     .flip {
         display: flex;
         flex-flow: column-reverse;
     }
-    
+
     .goods {
         width: 300px;
     }
-    
+
     .hours, .location {
         border-top: none;
 }
-    
+
     .intro {
         font-size: 45px;
 }
-    
+
     .map {
         width: 242px;
     }
-    
+
     .mobile {
         display: none;
     }
-    
-    nav ul {
-        background-color: #D8D8D8;
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    nav li {
+
+    nav {
+        ul {
+          background-color: #D8D8D8;
+          display: flex;
+          justify-content: space-around;
+        }
+        li {
         font-size: 25px;
+        }
     }
-    
+
     p {
         width: 100%;
         font-size: 15px;
     }
-    
+
     .product {
         width: 300px;
     }
-    
+
     .side {
         display: flex;
         flex-flow: row;
@@ -186,21 +187,21 @@ ul {
         border-bottom: 1px solid black;
         margin-bottom: 100px;
     }
-    
+
     .sub-head {
         font-size: 30px;
     }
-    
+
     .tiles {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
         margin-bottom: 100px;
     }
-    
+
     .tablet {
         display: block;
         width: 100%;
     }
-    
+
 }

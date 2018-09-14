@@ -43,7 +43,7 @@ h1, h2, h3 {
 }
 
 .hours {
-    @extend .location
+    @extend .location;
     text-align: center;
 }
 
@@ -78,7 +78,7 @@ li, p, table  {
 }
 
 p {
-    @extend table
+    @extend table;
     font-size: 10px;
     width: 220px;
     margin: 0 auto;

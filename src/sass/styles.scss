@@ -4,9 +4,9 @@ $color-accent: #D8D8D8;
 $color-main: #A01B2E;
 $line-color: black;
 @mixin flex-around {
-  display: flex
+  display: flex;
   justify-content: space-around;
-};
+}
 
 a {
     text-decoration: none;
